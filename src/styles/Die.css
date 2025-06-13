@@ -1,0 +1,24 @@
+.Die {
+	color: lightskyblue;
+}
+
+.shaking {
+	animation: wobble 1s ease;
+}
+
+@keyframes wobble {
+	0% { transform: rotate(0); }
+	25% { transform: rotate(20deg); }
+	50% { transform: rotate(-20deg); }
+	75% { transform: rotate(20deg); }
+	100% { transform: rotate(0); }
+}
+
+.pip {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

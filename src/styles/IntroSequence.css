@@ -1,0 +1,87 @@
+.intro-sequence {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-player {
+  position: absolute;
+  top: 10;
+  left: 10;
+  right: 10;
+  bottom: 10;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Push it to the back */
+}
+
+.aller-btn.visible-btn {
+  background:none; /* Temporary red overlay for placement */
+  border: none;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  bottom: 18%;
+  left: 620px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 2.5rem;
+  width: 250px;
+  z-index: 2;
+}
+
+.arrow-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  padding: 12px 16px;
+  font-size: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.212);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.intro-character-selection {
+  position: relative;
+  background: none;
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.intro-character-selection h2 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 2.1em;
+  color: rgb(255, 109, 4) ;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.intro-character-card {
+  width: 170px;
+  height: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.intro-character-card:hover {
+  transform: scale(1.05);
+}
+
+
+.intro-character-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+audio {
+  display: none;
+}

@@ -1,0 +1,32 @@
+.quiz-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 20px;
+	border: 3px solid #4caf50;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	z-index: 999;
+}
+
+.quiz-content h2 {
+	margin-bottom: 20px;
+    color: black;
+}
+
+.choices button {
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	background: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+
+.close-btn {
+	margin-top: 20px;
+	background: red;
+}

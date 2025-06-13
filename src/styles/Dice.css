@@ -1,0 +1,121 @@
+.RollDice {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	top: 28%; /* Adjust to align under the "depart" */
+	left: 8%; 
+	transform: translateX(-50%);
+	position: absolute;
+
+}
+
+
+
+.RollDice-box {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px; /* Adjust size */
+    height: 100px;
+}
+
+
+.RollDice-box::before {
+    content: "";
+    position: absolute;
+    width: 110px; /* Slightly bigger than dice */
+    height: 110px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    z-index: 0; /* Behind the dice */
+}
+
+
+
+.dice {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    transform-style: preserve-3d;
+	transition: transform 1s ease; /* Smooth transition to final face */
+	
+}
+
+
+
+@keyframes rolling {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+ 
+  50% {
+    transform: rotateX(720deg) rotateY(360deg);
+  }
+  
+  100% {
+    transform: rotateX(1080deg) rotateY(1080deg); /* Ends at random rotation */
+  }
+}
+
+
+
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid black;
+    background: linear-gradient(145deg, #dddbd8, #fff);
+}
+/*
+.face::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+}
+*/ 
+
+/* Dice faces */
+.front { transform: translateZ(35px); }
+.back { transform: rotateX(180deg) translateZ(35px); }
+.top { transform: rotateX(90deg) translateZ(35px); }
+.bottom { transform: rotateX(-90deg) translateZ(35px); }
+.right { transform: rotateY(90deg) translateZ(35px); }
+.left { transform: rotateY(-90deg) translateZ(35px); }
+
+
+
+.RollDice-button {
+	background: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	margin-top: 12px;
+}
+
+.RollDice-button:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.pip {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

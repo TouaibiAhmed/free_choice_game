@@ -1,0 +1,122 @@
+/* Background overlay */
+.CorrespondanceGame-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup window */
+.CorrespondanceGame-window {
+    background: #fffcf2;
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.CorrespondanceGame-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7f50;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    margin-bottom: 15px;
+}
+
+/* Question text */
+.CorrespondanceGame-question-text {
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Question image */
+.CorrespondanceGame-question-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Options container */
+.CorrespondanceGame-options-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Option box */
+.CorrespondanceGame-option-box {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.CorrespondanceGame-option-box:hover {
+    background-color: #f0f0f0;
+}
+
+/* Option image */
+.CorrespondanceGame-option-image {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Option label */
+.CorrespondanceGame-option-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Correct answer */
+.CorrespondanceGame-correct {
+    border-color: #32cd32;
+    background-color: #90ee90;
+}
+
+/* Wrong answer */
+.CorrespondanceGame-wrong {
+    border-color: red;
+    background-color: #ffcccb;
+}
+
+/* Feedback message */
+.CorrespondanceGame-feedback-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.CorrespondanceGame-correct-text {
+    color: green;
+}
+
+.CorrespondanceGame-wrong-text {
+    color: red;
+}
+
+.CorrespondanceGame-explanation-text {
+    color: #2c7db8;
+    font-style: italic;
+    margin-top: 10px;
+}

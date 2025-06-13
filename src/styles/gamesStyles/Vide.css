@@ -1,0 +1,113 @@
+/* Background overlay */
+
+.VideGame-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.VideGame-window {
+    position: fixed;
+
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Title */
+.VideGame-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: #ff7f50;
+}
+
+/* Content */
+.VideGame-content {
+    margin-top: 15px;
+}
+
+/* Question text */
+.VideGame-question-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: black;
+}
+
+/* Question image */
+.VideGame-question-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Options container */
+.VideGame-options-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Option button */
+.VideGame-option-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #4eb4b0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.VideGame-option-btn:hover {
+    background: rgb(76, 103, 237);
+}
+
+/* Correct answer */
+.VideGame-option-btn.VideGame-correct {
+    border-color: rgb(236, 255, 236);
+    background: #44cb63;
+}
+
+/* Wrong answer */
+.VideGame-option-btn.VideGame-wrong {
+    border-color: rgb(255, 212, 212);
+    background: #ff4252;
+}
+
+/* Feedback message */
+.VideGame-feedback-text {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.VideGame-correct-text {
+    color: green;
+}
+
+.VideGame-wrong-text {
+    color: red;
+}

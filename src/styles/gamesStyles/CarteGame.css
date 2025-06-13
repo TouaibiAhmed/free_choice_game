@@ -1,0 +1,81 @@
+/* Updated CarteGame.css */
+.carte-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.carte-window {
+  background-color: transparent;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0;
+}
+
+.carte-title {
+  color: white;
+  margin: 20px 0;
+  font-size: 26px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.carte-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.carte-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 180px; /* Adjust based on your image size */
+  height: auto;
+}
+
+.carte-btn:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+.carte-btn-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+
+}
+
+.carte-video-container {
+  width: 100%;
+  height: 70vh;
+  max-height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.carte-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: black;
+}
+
+.carte-question-step {
+  background-color: #DFD0B8;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+}

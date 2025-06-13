@@ -1,0 +1,209 @@
+/* General Layout */
+.character-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Game Title */
+.game-title {
+    margin-top: -3px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Logo */
+.game-logo {
+    width: 100px;
+    height: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Selection Box - Expands to fit most of the screen */
+.selection-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 650px; /* Bigger max-width for larger screens */
+    height: auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+/* Character Buttons */
+.character-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.character-btn {
+    background-color: #ffffff;
+    border: 3px solid #ccc;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #333;
+    width: 160px;
+    height: 160px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-btn:hover {
+    transform: scale(1.1);
+}
+
+.character-btn.selected {
+    border-color: #ff6600;
+    background-color: #ffe0b3;
+}
+
+/* Character Icons */
+.icon-img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+/* Color Buttons */
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.color-btn {
+    padding: 15px 30px;
+    border: 2px solid #ccc;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 130px;
+}
+
+.color-btn.selected {
+    border-color: #0088ff;
+    background-color: #99ddff;
+}
+
+/* Start Button */
+.start-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.6rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 3rem;
+    }
+    .game-logo {
+        width: 150px;
+    }
+    .selection-box {
+        padding: 30px;
+        width: 95%;
+    }
+    .character-btn {
+        width: 140px;
+        height: 140px;
+        font-size: 1.2rem;
+    }
+    .icon-img {
+        width: 70px;
+        height: 70px;
+    }
+    .color-btn {
+        width: 110px;
+        font-size: 1.1rem;
+    }
+    .start-btn {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 2.5rem;
+    }
+    .game-logo {
+        width: 120px;
+    }
+    .selection-box {
+        padding: 20px;
+    }
+    .character-btn {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+    .icon-img {
+        width: 60px;
+        height: 60px;
+    }
+    .color-btn {
+        width: 100px;
+        font-size: 1rem;
+    }
+    .start-btn {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+}
+.color-btn.color-bleu {
+    background-color: blue;
+    color: white;
+}
+
+.color-btn.color-gris {
+    background-color: gray;
+    color: white;
+}
+
+.color-btn.color-rose {
+    background-color: pink;
+    color: black;
+}
+
+.color-btn.color-violet {
+    background-color: purple;
+    color: white;
+}
